@@ -13,3 +13,13 @@ function togglePass() {
         h.setAttribute('hidden', true);
     }
 }
+
+// Toggle
+
+const toggle = document.getElementById("toggle");
+const main = document.getElementById("left-container");
+
+function toggleBar() {
+    toggle.classList.toggle("toggle-right");
+    main.classList.toggle("left-container-dark");
+}
