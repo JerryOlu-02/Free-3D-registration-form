@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    line-height: 2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+h3 {
+    color: #DECD8E;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+}
+
+span {
+    color: #423F82;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+.under-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+#checkbox {
+    margin-right: 5px;
+    accent-color: #423F82;
+}
+
+#email-field {
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1.5px;
+    margin-top: 50px;
+    width: 100%;
+    height: 6vh;
+    padding-left: 10px;
+}
+
+.forgot-password {
+    font-size: small;
+    color: lightgrey;
+    margin-right: 10px;
+}
+
+.toggle-password {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.toggle-password svg {
+    position: absolute;
+    right: 10px;
+    top: auto;
+    width: 16px;
+    height: auto;
+  }
+
+#password-field {
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1.5px;
+    position: relative;
+    width: 100%;
+    height: 6vh;
+    padding-left: 10px;
+}
+
+[hidden] { display: none; }
+
+#submit-button {
+    background-color: #423F82;
+    border-style: none;
+    border-radius: 2px;
+    color: #fff;
+    width: 100%;
+    height: 6vh;
+    margin-bottom: 35px
+}
+
+#submit-button:hover {
+    background-color: #9B9FFF;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+#left-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 2% 10% 5%;
+    text-align: center;
+}
+
+#left-middle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#right-container {
+    background-color: #9B9FFF;
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+#right-container img{
+    position: relative;
+    right: 10%;
+    width: 35rem;
+    height: 30rem;
+}
+
+/* Media Query */
+@media (max-width:1028px) {
+
+    body {
+        height: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #left-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 5% 10% 5%;
+    }
+    
+    #right-container {
+        padding: 5% 10%;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #right-container img{
+        transform: rotate(13deg);
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
