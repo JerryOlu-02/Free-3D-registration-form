@@ -147,6 +147,7 @@ span {
 
     main {
         flex-direction: column;
+        overflow-y: hidden;
     }
 
     #left-container {
@@ -170,6 +171,7 @@ span {
     }
     
     .under-form {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
